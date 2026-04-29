@@ -22,8 +22,9 @@ function login() {
       "Invalid credentials.",
       "Signal mismatch.",
       "Node not recognized.",
+      "Enter your signal node.",
       "This terminal is not intended for you.",
-      "Attempts are being logged."
+      "All attempts are being logged!!"
     ];
     document.getElementById("message").innerText =
       messages[Math.min(attempts - 1, messages.length - 1)];
@@ -36,8 +37,18 @@ function checkFrequency() {
   let freq = document.getElementById("freq").value;
 
   if (freq === "1420") {
-    document.getElementById("response").innerText =
-      "BASELINE ACCEPTED. CARRIER DETECTED.";
+	var link = document.createElement("a")
+	link.href = "https://open.spotify.com/track/0kgoK46qSIRcru3dZQlunI?si=0d36882a3de6463c";
+	link.textContent = "Go here now before they take it down";
+	
+	var elem = document.getElementById("response");
+    elem.innerText = "BASELINE ACCEPTED. CARRIER DETECTED.";
+	
+	var child = elem.appendChild(document.createElement("p"));	
+	child.appendChild(link);
+	elem.appendChild(child);
+	  
+	  
   } else {
     document.getElementById("response").innerText =
       "INCORRECT BASELINE.";
