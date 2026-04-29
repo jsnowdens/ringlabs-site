@@ -1,0 +1,46 @@
+body {
+  background-color: #C0C0C0;
+  font-family: "Times New Roman", serif;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overlay {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px dashed red;
+  background: #fff0f0;
+  color: darkred;
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Terminal style pages */
+.terminal {
+  background: black;
+  color: #00ff00;
+  font-family: monospace;
+  text-align: center;
+  padding-top: 100px;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+}
