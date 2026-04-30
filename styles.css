@@ -54,6 +54,12 @@ input {
 	color: green;
 }
 
+.container img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
 .secret-unlocked {
 	position: absolute;
 	top: 0;
