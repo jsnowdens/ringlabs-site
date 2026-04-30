@@ -54,20 +54,20 @@
 
 const listener = new KeySequenceListener("cherylkim");
 window.addEventListener("sequence:matched", (e) => {
-  console.log("Sequence detected!", e.detail);
+	console.log("Sequence detected!", e.detail);
 
-  const container = document.getElementById("myDiv");
-  const iframe = document.createElement("iframe");
-  iframe.title = "vimeo-player";
-  iframe.src = "https://player.vimeo.com/video/1187475176?h=5567718827";
-  iframe.width = "640";
-  iframe.height = "360";
-  iframe.frameBorder = "5";
-  iframe.classList.add("secret-unlocked");
-  iframe.referrerPolicy = "strict-origin-when-cross-origin";
-  iframe.allow = "autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share";
-  iframe.allowFullscreen = true;
-  container.appendChild(iframe);
+	const container = document.getElementById("myDiv");
+	const iframe = document.createElement("iframe");
+	iframe.title = "vimeo-player";
+	iframe.src = "https://google.com";
+	iframe.width = "640";
+	iframe.height = "360";
+	iframe.frameBorder = "5";
+	iframe.classList.add("secret-unlocked");
+	iframe.referrerPolicy = "strict-origin-when-cross-origin";
+	iframe.allow = "autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share";
+	iframe.allowFullscreen = true;
+	container.appendChild(iframe);
   
 //  document.body.appendChild(div);
 });
